@@ -1,0 +1,38 @@
+.header__body {
+  padding: 31px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo{
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-img{
+  width: 65px;
+  height: 65px;
+}
+
+.header__logo-text {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #4793FF;
+}
+
+.header__actions{
+  display: flex;
+  align-items: center;
+}
+
+.header__theme-btn{
+  display: flex;
+  img{
+    margin-right: 20px;
+    width: 35px;
+    height: 35px;
+  }
+}
