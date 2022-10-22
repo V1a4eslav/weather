@@ -1,0 +1,79 @@
+.tabs {
+  &__inner {
+    padding: 50px 0;
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: 15px;
+    margin-bottom: 27px;
+  }
+
+  &__btn {
+    padding: 8px 20px;
+    background: #FFFFFF;
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+    border-radius: 5px;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000;
+
+    &._active {
+      background: #4793FF;
+      color: #fff;
+    }
+  }
+}
+
+.weather-day {
+  display: flex;
+  &__item {
+    width: 149px;
+    padding: 11px;
+    display: flex;
+    flex-direction: column;
+    background: rgba(71, 147, 255, 0.2);
+    border-radius: 10px;
+  }
+
+  &__item-title,
+  &__item-deg-day {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &__item-title {
+    margin-bottom: 7px;
+  }
+
+  &__item-data {
+    font-size: 14px;
+    line-height: 17px;
+    color: #939CB0;
+    margin-bottom: 12px;
+  }
+
+  &__item-weather-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 12px;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+
+  &__item-deg-day {
+  }
+
+  &__item-deg-night {
+  }
+  &__item-deg-night,
+  &__item-weather-description{
+    font-size: 13px;
+    line-height: 16px;
+    color: #939CB0;
+  }
+}
+

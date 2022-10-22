@@ -9,7 +9,7 @@ export const Header = () => {
             <div className="header__container _container">
                 <div className="header__body">
                     <Link to={'/'} className="header__logo">
-                        <img className="header__logo-img" src="./images/logo.png" alt="logo-img"/>
+                        <img className="header__logo-img" src="../../../../../assets/images/logo.png" alt="logo-img"/>
                         <span className="header__logo-text">React weather</span>
                     </Link>
                     <div className="header__actions">

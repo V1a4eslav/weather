@@ -1,11 +1,13 @@
 @import './variables.scss';
 @import './null.scss';
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
-body{
+body {
   font-family: $fontFamily, sans-serif;
+  background-color: #FDFDFD;
 }
-._container{
+
+._container {
   max-width: 1220px;
   margin: 0 auto;
   padding: 0 15px;

@@ -1,11 +1,8 @@
 import React from 'react';
 import Select from 'react-select'
-
-const options = [
-    {value: 'city-1', label: 'Dnipro'},
-    {value: 'city-2', label: 'Lviv'},
-    {value: 'city-3', label: 'Odessa'}
-];
+import {useDispatch, useSelector} from "react-redux";
+import {citiesList, selectCity} from "../../../store/cities/selectors";
+import {setLabel} from '../../../store/cities/citiesSlice'
 
 const colourStyles = {
     control: (styles: any) => ({
@@ -30,7 +27,15 @@ const colourStyles = {
 }
 
 export const LocationSelect = () => {
+    const selectedCity = useSelector(selectCity);
+    const cities = useSelector(citiesList);
+    const dispatch = useDispatch();
+
+    const onSelectCity = (city:any) => {
+        dispatch(setLabel(city))
+    }
     return (
-        <Select defaultValue={options[0]} styles={colourStyles} options={options}/>
+        <Select defaultValue={selectedCity} styles={colourStyles} options={cities}
+                onChange={value => onSelectCity(value)}/>
     );
 };

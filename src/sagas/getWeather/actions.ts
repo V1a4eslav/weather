@@ -1,0 +1,1 @@
+export const getWeather = (payload: string) => ({type: '@saga/GET_WEATHER', payload});
